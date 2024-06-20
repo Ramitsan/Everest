@@ -1,0 +1,119 @@
+.blog {
+  padding: 140px 0;
+}
+
+.blog__title {
+  @include third-level-headings ();
+  margin: 0;
+  margin-bottom: 80px;
+  color: var(--dark);
+  text-align: center;
+}
+
+.blog__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 70px;
+}
+
+.blog__oblects {
+  width: 400px;
+}
+
+.blog__titles-list {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blog__label {
+  width: 100%;
+  display: block;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--dark);
+  cursor: pointer;
+  border-bottom: 1px solid #061B28;
+}
+
+.blog__titles-date {
+  display: block;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #626F77;
+}
+
+#blog-object-1:checked~.blog__oblects .blog__label--1,
+#blog-object-2:checked~.blog__oblects .blog__label--2,
+#blog-object-3:checked~.blog__oblects .blog__label--3,
+#blog-object-4:checked~.blog__oblects .blog__label--4,
+#blog-object-5:checked~.blog__oblects .blog__label--5 {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.blog__link {
+  width: 100%;
+  display: inline-block;
+  padding: 18px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--light);
+  background-color: var(--orange);
+}
+
+.blog__articles {
+  width: calc(100% - 400px - 70px);
+}
+
+.blog__article {
+  display: none;
+}
+
+#blog-object-1:checked~.blog__articles .blog__article--1,
+#blog-object-2:checked~.blog__articles .blog__article--2,
+#blog-object-3:checked~.blog__articles .blog__article--3,
+#blog-object-4:checked~.blog__articles .blog__article--4,
+#blog-object-5:checked~.blog__articles .blog__article--5 {
+  display: block;
+}
+
+.article__image {
+  margin-bottom: 40px;
+}
+
+.article__date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #626F77;
+}
+
+.article__title {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+  color: var(--dark);
+}
+
+.article__text {
+  width: 100%;
+  font-weight: 400;
+font-size: 16px;
+  line-height: 150%;
+  color: var(--dark);
+}
