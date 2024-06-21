@@ -1,0 +1,81 @@
+.contacts {
+  padding-top: 140px;
+  padding-bottom: 260px;
+}
+
+.contacts__container {
+  display: flex;
+}
+
+.contacts__map {
+  width: 600px;
+}
+
+.contacts__info {
+  padding-left: 70px;
+}
+
+.contacts__title {
+  @include third-level-headings ();
+  margin: 0;
+  margin-bottom: 50px;
+  color: var(--dark);
+  text-align: left;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--dark);
+}
+
+.contacts__address {
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 140%;
+  color: var(--dark);
+}
+
+.contacts__link {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  color: var(--dark);
+}
+
+.social__list {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social__link--facebook {
+  background-image: url("../../img/svg/icon-facebook.svg");
+}
+
+.social__link--insta {
+  background-image: url("../../img/svg/icon-insta.svg");
+}
+
+.social__link--twitter {
+  background-image: url("../../img/svg/icon-twitter.svg");
+}
