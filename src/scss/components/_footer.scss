@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--dark);
+  padding: 50px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__text,
+.privacy {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--light);
+}
