@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 140px;
-  padding-bottom: 260px;
+  padding-bottom: 200px;
 }
 
 .contacts__container {
@@ -51,6 +51,15 @@
   font-size: 22px;
   line-height: 150%;
   color: var(--dark);
+
+  &:focus,
+  &:hover {
+    color: var(--orange);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .social__list {
@@ -63,19 +72,29 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-.social__link--facebook {
-  background-image: url("../../img/svg/icon-facebook.svg");
+.social__icon {
+  width: 100%;
+
+  & path {
+    transition: all 0.3s;
+  }
+
+  &:focus,
+  &:hover {
+    & path {
+      fill: var(--orange);
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
-.social__link--insta {
-  background-image: url("../../img/svg/icon-insta.svg");
-}
-
-.social__link--twitter {
-  background-image: url("../../img/svg/icon-twitter.svg");
-}
+// @include tablet {
+//   .contacts__container {
+//     flex-direction: column;
+//   }
+// }

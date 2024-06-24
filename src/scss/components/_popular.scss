@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .slider__item {
@@ -175,3 +176,40 @@
   }
 }
 
+.slider__buttons {
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+.slider__button {
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  background-color: var(--gray);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11px 7px;
+  vertical-align: middle;
+  transition: all 0.3s;
+
+  &:focus,
+  &:hover {
+    background-color: var(--orange);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.slider__button--prev {
+  background-image: url("../../img/svg/arrow-left.svg");
+}
+
+.slider__button--next {
+  background-image: url("../../img/svg/arrow-right.svg");
+}

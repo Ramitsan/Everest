@@ -66,4 +66,15 @@
   line-height: 19px;
   color: var(--light);
   border: 2px solid var(--light);
+  transition: all 0.3s;
+
+  &:focus,
+  &:hover {
+    color: var(--dark);
+    background-color: var(--light);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }

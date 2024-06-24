@@ -88,6 +88,11 @@
   color: var(--light);
   background-color: var(--orange);
   vertical-align: middle;
+  transition: all 0.3s;
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .help-form__submit-info {
