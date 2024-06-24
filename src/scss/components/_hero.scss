@@ -2,10 +2,13 @@
   position: relative;
   width: 100%;
   height: 650px;
-  background-image: url("../../img/main-screen.png");
+  background-image: url("../img/main-screen.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  @media (min-resolution: var(--retina-dpi)), (min-resolution: var(--retina-dppx)) {
+    background-image: url("../img/main-screen_2x.png");
+  }
 }
 
 .hero__wrapper {

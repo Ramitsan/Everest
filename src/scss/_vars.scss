@@ -7,7 +7,9 @@
   --content-width: 1170px;
   --container-offset: 0px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-
+  --retina-dpi: 144dpi;
+  --retina-dppx: 1.5dppx;
+  
   // colors
   --light: #FCFCFC;
   --dark: #061B28;
@@ -15,6 +17,8 @@
   --orange: #EC5118;
   --light-gray: #fcfcfc66;
 }
+
+
 
 // @include tablet {
 //   :root {

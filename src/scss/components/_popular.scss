@@ -74,7 +74,7 @@
     height: 16px;
     top: 0;
     left: 0;
-    background-image: url("../../img/svg/icon-pin.svg");
+    background-image: url("../img/svg/icon-pin.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -86,7 +86,7 @@
   height: 35px;
   border-radius: 50%;  
   background: rgba(252, 252, 252, 0.4);
-  background-image: url("../../img/svg/icon-bookmark.svg");
+  background-image: url("../img/svg/icon-bookmark.svg");
   background-size: 10px 13px;
   background-position: center;
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("../../img/svg/vertical-line.svg");
+    background-image: url("../img/svg/vertical-line.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -166,13 +166,13 @@
 
 .slide-info__level--middle {
   &::before {
-    background-image: url("../../img/svg/icon-level-middle.svg");
+    background-image: url("../img/svg/icon-level-middle.svg");
   }
 }
 
 .slide-info__level--simple {
   &::before {
-    background-image: url("../../img/svg/icon-level-simple.svg");
+    background-image: url("../img/svg/icon-level-simple.svg");
   }
 }
 
@@ -207,9 +207,9 @@
 }
 
 .slider__button--prev {
-  background-image: url("../../img/svg/arrow-left.svg");
+  background-image: url("../img/svg/arrow-left.svg");
 }
 
 .slider__button--next {
-  background-image: url("../../img/svg/arrow-right.svg");
+  background-image: url("../img/svg/arrow-right.svg");
 }

@@ -2,10 +2,14 @@
   padding-top: 100px;
   padding-bottom: 130px;
   background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92)),
-    url("../../img/tours-bg.jpg");
+    url("../img/tours-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-resolution: var(--retina-dpi)), (min-resolution: var(--retina-dppx)) {
+    background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92)),
+    url("../img/tours-bg_2x.jpg");
+  }
 }
 
 .tours__container {

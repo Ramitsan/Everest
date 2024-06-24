@@ -24,10 +24,13 @@
 }
 
 .help__background-right {
-  background-image: url("../../img/help-img.png");
+  background-image: url("../img/help-img.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-resolution: var(--retina-dpi)), (min-resolution: var(--retina-dppx)) {
+    background-image: url("../img/help-img_2x.png");
+  }
 }
 
 .help__container {
