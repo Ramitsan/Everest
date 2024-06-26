@@ -27,7 +27,7 @@
   color: var(--dark);
 }
 
-.ascetn__text {
+.ascent__text {
   width: 350px;
   font-style: normal;
   font-weight: 400;
@@ -47,6 +47,11 @@
   }
   .ascent__container {
     margin-left: 20px;
+    padding-right: 0;
+  }
+
+  .ascent__title {
+    width: 420px;
   }
 }
 
@@ -54,5 +59,22 @@
   .ascent {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  .ascent__wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .ascent__container {
+    margin-left: 0;
+  }
+  
+  .ascent__title {
+    width: 100%;
+  }
+
+  .ascent__text {
+    width: 100%;
   }
 }
