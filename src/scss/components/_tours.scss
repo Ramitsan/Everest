@@ -90,3 +90,11 @@
     margin-bottom: 50px;
   }
 }
+
+@include small-tablet {
+  .tours__table {
+    width: calc(100% - 2 * 25px);
+    margin: 0 25px;
+    margin-bottom: 50px;
+  }
+}

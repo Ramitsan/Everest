@@ -192,3 +192,10 @@
     width: 100%;
   }
 }
+
+@include small-tablet {
+  .blog__label {
+    padding: 20px;
+    font-size: 16px;
+  }
+}

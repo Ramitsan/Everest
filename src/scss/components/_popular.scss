@@ -246,6 +246,15 @@
   }
   .slider__item {
     width: calc((100% - 20px) / 2);
-  }
-  
+  }  
+}
+
+@include small-tablet {
+  .slider__list {
+    --cols: 1;
+}
+
+.slider__item {
+  width: calc(100% - 20px);
+}
 }
