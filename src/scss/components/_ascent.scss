@@ -5,7 +5,7 @@
 
 .ascent__wrapper {
   position: relative;
-  width: 1366px;
+  max-width: 1366px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
@@ -22,6 +22,7 @@
 
 .ascent__title {
   width: 472px;
+  margin-top: 0;
   @include third-level-headings ();
   color: var(--dark);
 }
@@ -36,6 +37,22 @@
 }
 
 .ascent__img-wrap {
-  width: 815px;
   right: 0;
+}
+
+@include small-desktop {
+  .ascent {
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+  .ascent__container {
+    margin-left: 20px;
+  }
+}
+
+@include tablet {
+  .ascent {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }

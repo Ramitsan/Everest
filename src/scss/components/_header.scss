@@ -7,7 +7,8 @@
 }
 
 .header__container {
-  padding: 42px 0px;
+  padding-top: 42px;
+  padding-bottom: 42px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -132,6 +133,11 @@
 .main-nav-toggle {
   display: none;
 }
+
+@include tablet {
+
+}
+
 
 // @media(max-width: 1620px) {
 //   .header__logo {

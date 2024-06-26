@@ -27,10 +27,18 @@
   justify-content: space-between;
   overflow: hidden;
   margin-bottom: 40px;
+  gap: 30px;
+  overflow: hidden;
 }
 
 .slider__item {
   position: relative;
+  width: calc((100% - 2 * 30px) / 3);
+  flex-shrink: 0;
+}
+
+.slide__image {
+  width: 100%;
 }
 
 .slide__image-overlay {
@@ -212,4 +220,32 @@
 
 .slider__button--next {
   background-image: url("../img/svg/arrow-right.svg");
+}
+
+@include small-desktop {
+  .popular {
+    padding-bottom: 130px;
+  }
+  .slider__list {
+    gap: 20px;
+  }
+  .slider__item {
+    width: calc((100% - 2 * 20px) / 3);
+  }
+  .slide-info {
+    padding: 30px 20px;
+  }
+}
+
+@include tablet {
+  .popular {
+    padding-bottom: 80px;
+  }
+  .slider__list {
+    --cols: 2;
+  }
+  .slider__item {
+    width: calc((100% - 20px) / 2);
+  }
+  
 }

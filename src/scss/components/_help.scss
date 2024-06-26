@@ -28,7 +28,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media (min-resolution: var(--retina-dpi)), (min-resolution: var(--retina-dppx)) {
+
+  @media (min-resolution: var(--retina-dpi)),
+  (min-resolution: var(--retina-dppx)) {
     background-image: url("../img/help-img_2x.png");
   }
 }
@@ -105,4 +107,57 @@
   font-size: 14px;
   line-height: 140%;
   color: var(--light);
+}
+
+.help__image {
+  display: none;
+}
+
+@include tablet {
+  .help {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .help__background-right {
+    display: none;
+  }
+
+  .help__background-left {
+    width: 100%;
+  }
+
+  .help__container {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 70px;
+  }
+
+  .help__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .help__title {
+    text-align: center;
+  }
+
+  .help__image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    z-index: 1;
+    background-image: url("../img/help-img.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    @media (min-resolution: var(--retina-dpi)),
+    (min-resolution: var(--retina-dppx)) {
+      background-image: url("../img/help-img_2x.png");
+    }
+  }
 }

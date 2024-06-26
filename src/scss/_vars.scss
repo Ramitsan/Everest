@@ -20,8 +20,8 @@
 
 
 
-// @include tablet {
-//   :root {
-//     --container-offset: 20px;
-//   }
-// }
+@include small-desktop {
+  :root {
+    --container-offset: 20px;
+  }
+}
