@@ -1,1 +1,1 @@
-import './components/tabs.js';
+import './components/burger.js';

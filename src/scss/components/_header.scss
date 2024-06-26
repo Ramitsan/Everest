@@ -129,152 +129,97 @@
   height: 13px;
 }
 
-
 .main-nav-toggle {
   display: none;
 }
 
 @include tablet {
+  .main-nav {
+    position: absolute;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+    width: 100%;
+    padding-top: 100px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+  }
 
+  .main-nav--closed {
+    position: fixed;
+    right: -500px;
+    transform: translateX(100%);
+    transition: all .7s ease-out;
+  }
+
+  .main-nav--opened {
+    position: fixed;
+    right: 0;
+    transform: translateX(0%);
+    transition: all .7s ease-out;
+  }
+
+  .main-nav-toggle {
+    position: absolute;
+    width: 60px;
+    height: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 47px;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("../../img/svg/icon-menu-burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 3000;
+  }
+
+  .header__nav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: unset;
+  }
+
+  .nav__list {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 15px 10px;
+    font-size: 24px;
+    color: var(--dark);
+    text-align: center;
+  }
+
+  .header__right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header__phone {
+    font-size: 24px;
+    color: var(--dark);
+  }
+  
+  .header__btn {
+    background-color: var(--orange);
+  }
 }
-
-
-// @media(max-width: 1620px) {
-//   .header__logo {
-//     display: inline-block;
-//     margin-left: 30px;
-//   }
-// }
-
-// @media(max-width: 1200px) {
-//   .nav__list {
-//     gap: 25px;
-//   }
-
-//   .nav__link {
-//     font-size: 12px;
-//   }
-
-//   .header__phone {
-//     margin-right: 20px;
-//   }
-// }
-
-// @media(max-width: 1024px) {
-//   .header {
-//     border-radius: 0 0 30px 30px;
-//   }
-
-//   .main-nav {
-//     position: absolute;
-//     height: 100vh;
-//     z-index: 1000;
-//     top: 0;
-//     right: 0;
-//     max-width: 500px;
-//     width: 100%;
-//     padding-top: 100px;
-//     margin: 0px;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     background-color: var(--white);
-//   }
-
-//   .main-nav--closed {
-//     position: fixed;
-//     right: -500px;
-//     transform: translateX(100%);
-//     transition: all .7s ease-out;
-//   }
-
-//   .main-nav--opened {
-//     position: fixed;
-//     right: 0;
-//     transform: translateX(0%);
-//     transition: all .7s ease-out;
-//   }
-
-//   .main-nav-toggle {
-//     position: absolute;
-//     width: 60px;
-//     height: 35px;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     right: 47px;
-//     display: block;
-//     padding: 0;
-//     background-color: transparent;
-//     background-image: url("../img/svg/icon-menu-burger.svg");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     z-index: 3000;
-//   }
-
-//   .nav {
-//     order: 2;
-//     padding-right: 0;
-//   }
-
-//   .header__nav {
-//     width: 100%;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     margin-right: unset;
-//   }
-
-//   .nav__list {
-//     width: 100%;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     margin-top: 20px;
-//     margin-bottom: 100px;
-//   }
-
-//   .nav__item:not(:last-child) {
-//     margin-right: 0px;
-//   }
-
-//   .nav__link {
-//     display: block;
-//     padding: 15px 10px;
-//     font-size: 24px;
-//     color: var(--dark-grey);
-//     text-align: center;
-//   }
-
-//   .nav__link--active {
-//     background-color: var(--narcissus);
-//   }
-
-//   .header__right {
-//     width: 100%;
-//     order: 1;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 40px;
-//   }
-
-//   .header__phone {
-//     font-size: 18px;
-//     color: var(--aquamarine);
-//   }
-
-//   .header__icon-search {
-//     stroke: var(--aquamarine);
-//     width: 25px;
-//     height: 25px;
-//   }
-
-//   .header__icon-pin {
-//     stroke: var(--aquamarine);
-//     width: 25px;
-//     height: 25px;
-//   }
-// }
-
-// @media(max-width: 768px) {
-//   .header {
-//     border-radius: 0 0 20px 20px;
-//   }
-// }
