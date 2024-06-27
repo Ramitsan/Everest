@@ -73,9 +73,11 @@
   padding-right: 10px;
   line-height: 150%;
   color: #7E8386;
+  flex-shrink: 0;
 }
 
 .help-form__input {
+  width: 100%;
   background-color: transparent;
   outline: none;
   line-height: 150%;

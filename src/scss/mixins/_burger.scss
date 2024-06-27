@@ -10,7 +10,7 @@
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: #fff;
   background-color: transparent;
   cursor: pointer;
 
@@ -45,6 +45,7 @@
   }
 
   &--active {
+    color: var(--orange);
     &::before {
       top: 50%;
       transform: rotate(45deg);

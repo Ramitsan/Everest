@@ -19,8 +19,7 @@ function openMenu() {
   mainNav.classList.remove('main-nav--closed');
   mainNav.classList.add('main-nav--opened'); 
   document.body.style.overflowY = 'hidden';
-  mainNavToggle.style.backgroundImage = 'url("../img/svg/icon-menu-cross.svg")';
-  mainNavToggle.style.backgroundSize = '60px 35px';
+  mainNavToggle.classList.add('burger--active');
   createOverlay();
 }
 
@@ -28,8 +27,7 @@ function closeMenu() {
   mainNav.classList.add('main-nav--closed');
   mainNav.classList.remove('main-nav--opened');
   document.body.style.overflowY = 'visible';
-  mainNavToggle.style.backgroundImage = '';
-  mainNavToggle.style.backgroundSize = 'cover';
+  mainNavToggle.classList.remove('burger--active');
   removeOverlay();
 }
 
@@ -38,14 +36,7 @@ mainNnavLinkActive.addEventListener('click', closeMenu);
 
 function createOverlay() {
   let overlayElement = document.createElement('div');
-  overlayElement.style.position = 'fixed';
-  overlayElement.style.backgroundColor = 'rgba(41,41,41,0.6)';
-  overlayElement.style.left = 0;
-  overlayElement.style.right = 0;
-  overlayElement.style.top = 0;
-  overlayElement.style.bottom = 0;
-  overlayElement.style.zIndex = '999';
-  overlayElement.style.display = 'flex';
+  overlayElement.className = "burger-overlay";
   return overlayElement;
 }
 
