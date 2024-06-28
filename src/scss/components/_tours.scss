@@ -6,9 +6,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media (min-resolution: var(--retina-dpi)), (min-resolution: var(--retina-dppx)) {
+
+  @media (min-resolution: var(--retina-dpi)),
+  (min-resolution: var(--retina-dppx)) {
     background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92)),
-    url("../img/tours-bg_2x.jpg");
+      url("../img/tours-bg_2x.jpg");
   }
 }
 
@@ -83,7 +85,17 @@
   }
 }
 
+@include small-desktop {
+  .tours {
+    padding-bottom: 100px;
+  }
+}
+
 @include tablet {
+  .tours {
+    padding: 80px 0;
+  }
+
   .tours__table {
     width: calc(100% - 200px);
     margin: 0 100px;
@@ -96,5 +108,19 @@
     width: calc(100% - 2 * 25px);
     margin: 0 25px;
     margin-bottom: 50px;
+  }
+}
+
+@include mobile {
+  .tours {
+    padding: 70px 0;
+  }
+
+  .tours__table {
+    font-size: 16px;
+  }
+
+  .tours__table-head {
+    font-size: 16px;
   }
 }

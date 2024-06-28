@@ -247,3 +247,19 @@
     background-color: var(--orange);
   }
 }
+
+@include mobile {
+  .main-nav-toggle {
+    width: 50px;
+    height: 30px;
+    right: 30px;
+  }
+
+  .nav__list {
+    margin-bottom: 50px;
+  }
+
+  .header__right {
+    flex-direction: column;
+  }
+}

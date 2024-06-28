@@ -100,7 +100,7 @@
 @include small-desktop {
   .contacts {
     padding-top: 100px;
-    padding-bottom: 130px;
+    padding-bottom: 100px;
   }
 
   .contacts__info {
@@ -114,6 +114,10 @@
 }
 
 @include tablet {
+  .contacts {
+    padding: 80px 0;
+  }
+
   .contacts__container {
     flex-direction: column;
   }
@@ -123,6 +127,7 @@
   }
 
   .contacts__info {
+    padding-left: 0;
     order: 1;
     text-align: center;
   }
@@ -147,4 +152,10 @@
     justify-content: flex-start;
     align-items: center;
   }
+}
+@include mobile {
+  .contacts {
+    padding: 70px 0;
+  }
+
 }

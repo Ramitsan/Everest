@@ -92,7 +92,7 @@
 .slide-info__bookmark {
   width: 35px;
   height: 35px;
-  border-radius: 50%;  
+  border-radius: 50%;
   background: rgba(252, 252, 252, 0.4);
   background-image: url("../img/svg/icon-bookmark.svg");
   background-size: 10px 13px;
@@ -132,6 +132,7 @@
 
 .slide-info__details span:not(:first-child) {
   padding: 0 10px;
+
   &::before {
     content: "";
     position: absolute;
@@ -224,14 +225,17 @@
 
 @include small-desktop {
   .popular {
-    padding-bottom: 130px;
+    padding-bottom: 100px;
   }
+
   .slider__list {
     gap: 20px;
   }
+
   .slider__item {
     width: calc((100% - 2 * 20px) / 3);
   }
+
   .slide-info {
     padding: 30px 20px;
   }
@@ -241,20 +245,28 @@
   .popular {
     padding-bottom: 80px;
   }
+
   .slider__list {
     --cols: 2;
   }
+
   .slider__item {
     width: calc((100% - 20px) / 2);
-  }  
+  }
 }
 
 @include small-tablet {
   .slider__list {
     --cols: 1;
+  }
+
+  .slider__item {
+    width: calc(100% - 20px);
+  }
 }
 
-.slider__item {
-  width: calc(100% - 20px);
-}
+@include mobile {
+  .popular {
+    padding-bottom: 70px;
+  }
 }

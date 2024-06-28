@@ -115,8 +115,16 @@
   display: none;
 }
 
+@include small-desktop {
+  .help {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 @include tablet {
   .help {
+    padding-top: 80px;
     flex-direction: column;
     padding-bottom: 0;
   }
@@ -161,5 +169,25 @@
     (min-resolution: var(--retina-dppx)) {
       background-image: url("../img/help-img_2x.png");
     }
+  }
+}
+
+@include mobile {
+  .help {
+    padding-top: 70px;
+  }
+
+  .help__info {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .help__form {
+    width: 100%;
+  }
+
+  .help-form__submit-info {
+    width: 100%;
   }
 }

@@ -130,8 +130,7 @@
 
 @include small-desktop {
   .blog {
-    padding-top: 100px;
-    padding-bottom: 130px;
+    padding-top: 100px
   }
 
   .blog__content {
@@ -148,6 +147,10 @@
 }
 
 @include tablet {
+  .blog {
+    padding-top: 80px;
+  }
+
   .blog__content {
     position: relative;
     flex-direction: column;
@@ -165,7 +168,7 @@
   .blog__titles-list {
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     overflow: scroll;
     margin-bottom: 0;
   }
@@ -173,9 +176,10 @@
   .blog__titles-item {
     width: calc(100% / 3);
     flex-shrink: 0;
-}
+  }
 
   .blog__label {
+    height: 100%;
     border-bottom: none;
   }
 
@@ -194,8 +198,27 @@
 }
 
 @include small-tablet {
-  .blog__label {
+  .blog__label {   
     padding: 20px;
     font-size: 16px;
+  }
+}
+
+@include mobile {
+  .blog {
+    padding-top: 70px;
+  }
+
+  .blog__titles-item {
+    width: calc(100% / 2);
+  }
+
+  .blog__label {
+    padding: 15px;
+  }
+
+  .article__image {
+    height: 200px;
+    object-fit: cover;
   }
 }
