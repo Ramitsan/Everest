@@ -18,6 +18,9 @@
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .slider__list {
@@ -26,9 +29,10 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  margin-bottom: 40px;
   gap: 30px;
   overflow: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .slider__item {
@@ -258,10 +262,11 @@
 @include small-tablet {
   .slider__list {
     --cols: 1;
+    gap: 0;
   }
 
   .slider__item {
-    width: calc(100% - 20px);
+    width: 100%;
   }
 }
 
